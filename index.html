@@ -1,232 +1,250 @@
 <!DOCTYPE html>
-    <html lang="PL">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Kacper Łukaszewski nr 154948">
-        <title>CV - Kacper Łukaszewski</title>
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<html lang="PL">
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kacper Łukaszewski nr 154948">
+    <title>CV - Kacper Łukaszewski</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#home" class="nav__logo">Kacper Łukaszewski</a>
+</head>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>O MNIE</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#paper" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>PROJEKTY</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>KONTAKT</a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
-                <div class="nav__btns">
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-                    <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Kacper Łukaszewski</a>
 
-        <main class="main">
-            <section class="home section" id="home" data-id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/kacper-lukaszewski/" target="_blank" class="home__social-icon"><i class="uil uil-linkedin-alt"></i></a>
-                            <a href="https://github.com/TheKacpi130" target="_blank" class="home__social-icon"><i class="uil uil-github-alt"></i></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>O MNIE</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#paper" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>PROJEKTY</a>
+                    </li>
+                    <li>
+                        <div class="clock-container">
+                            <div id="clock"></div>
                         </div>
-                        <div class="home__img">
-                            <img src="./assets/img/home.png" alt="">
-                        </div>
-                        <div class="home__data">
-                            <h1 class="home__title">KACPER ŁUKASZEWSKI</h1>
-                            <h3 class="home__subtitle">Wsparcie IT</h3>
-                            <p class="home__description">Aspirujący Front-End Developer na ostatnim roku studiów. Za dnia jako wsparcie dla kilkunastu firm w Stolicy, po godzinach droniarz i początkujący twórca stron WWW</p>
-                            <a download="" href="assets/pdf/Kacper ŁukaszewskiCV-PAZ2023.pdf" class="button button--flex">Download CV<i class="uil uil-download-alt button__icon"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about section" id="about" data-id="about">
-                <h2 class="section__title">O MNIE</h2>
-                <span class="section__subtitle">TO JA</span>
-
-                <div class="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="Kacper na plaży Walencja" class="about__img">
-                    <div class="about__data">
-                        <p class="about__description">Już od Technikum wiedziałem że chce zostać informatykiem z początku była to wyłącznie miłość do hardware'u lecz z czasem strasznie polubiłem pisanie stron WWW ale nie zamykając się tylko na HTML czy CSS. Każdego dnia staram uczyć się czegoś nowego i powiększać swoją wiedzę w zakresie IT i nowych technologii</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="qualification section">
-                <h2 class="section__title">DOŚWIADCZENIE</h2>
-                <span class="section__subtitle"></span>
-
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex qualification__active" data-target="#education">
-                            <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-
-                        <div class="qualification__button button--flex" data-target="#work">
-                            <i class="uil uil-briefcase-alt qualification__icon"></i>
-                            Work
-                        </div>
-                    </div>
-                    <div class="qualification__sections">
-                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                        <div class="qualification__content qualification__active" data-content id="education">
-                             <!--==================== QUALIFICATION  1 ====================-->
-                             <div class="qualification__data">
-                                <div>
-                                    <span class="qualification__degree">Technikum</span>
-                                    <h3 class="qualification__tittle">Kierunek Informatyka</h3>
-                                    <span class="qualification__subtitle">Zespół Szkół Zawodowychim. Marii Skłodowskiej-Curie</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2014 - 2018
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-
-                             <!--==================== QUALIFICATION  2 ====================-->
-                             <div class="qualification__data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                                <div>
-                                    <span class="qualification__degree">Studia</span>
-                                    <h3 class="qualification__tittle">Front-End Developer</h3>
-                                    <span class="qualification__subtitle">Uniwersytet WSB Merito Warszawa</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020 - obecnie
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                        <div class="qualification__content" data-content id="work">
-                            <!--==================== QUALIFICATION  1 ====================-->
-                            <div class="qualification__data">
-                               <div>
-                                   <h3 class="qualification__tittle">Kierowca do 3,5t/ listonosz paczkowy</h3>
-                                   <span class="qualification__subtitle">POCZTA POLSKA S.A.</span>
-                                   <div class="qualification__calendar">
-                                       <i class="uil uil-calendar-alt"></i>
-                                       Wrzesień 2018 - Grudzień 2022
-                                   </div>
-                               </div>
-                               <div>
-                                   <span class="qualification__rounder"></span>
-                                   <span class="qualification__line"></span>
-                               </div>
-                           </div>
-
-                            <!--==================== QUALIFICATION  2 ====================-->
-                            <div class="qualification__data">
-                               <div></div>
-                               <div>
-                                   <span class="qualification__rounder"></span>
-                                   <span class="qualification__line"></span>
-                               </div>
-
-                               <div>
-                                   <h3 class="qualification__tittle">Wsparcie IT / Technik Informatyk</h3>
-                                   <span class="qualification__subtitle">OPCJA.PL</span>
-                                   <div class="qualification__calendar">
-                                       <i class="uil uil-calendar-alt"></i>
-                                       Luty 2023 - obecnie
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="paper section" id="paper" data-id="paper">
-                <h2 class="section__title">Projekty</h2>
-                <span class="section__subtitle">Projekty którymi się zajmuje aktualnie</span>
-                
-                <div class="paper__container container swiper">
-                    <div class="swiper-wrapper">
-                        <!-- 1 -->
-                        <div class="paper__content grid swiper-slide">
-                            <img src="assets/img/projekt1.webp" alt="CFD code OpenFOAM mesh for pool scrubbing geometry" class="paper__img">
-
-                            <div class="paper__dat">
-                                <h3 class="paper__title">PASIEKA POD WIERZBĄ</h3>
-                                <p class="paper__description">Strona internetowa rodzinnej pasieki z miodami</p>
-                                <a href="https://www.pasiekapodwierzba.pl" target="_blank" class="button button--flex button--small paper__button">SPRAWDŹ<i class="uil uil-arrow-right button__icon"></i></a>
-                            </div>
-                        </div>  
-                        <!-- 2 -->
-                        <div class="paper__content grid swiper-slide">
-                            <img src="assets/img/projekt2.png" alt="Small modular reactor containment pressure and radioactivity" class="paper__img">
-
-                            <div class="paper__dat">
-                                <h3 class="paper__title">FanatykDroniarstwa</h3>
-                                <p class="paper__description">Autorska strona wkrótce powstanie</p>
-                            </div>
-                        </div>   
-                        <!-- 3 -->
-                        <div class="paper__content grid swiper-slide">
-                            <img src="assets/img/projekt3.png" alt="Integral experiment test facility" class="paper__img">
-
-                            <div class="paper__dat">
-                                <h3 class="paper__title">RUDAKIWI</h3>
-                                <p class="paper__description">Projekt sklepu internetowego na potrzeby druków i nalepek przedstawiające pewną markę już wkrótce</p>
-                            </div>
-                        </div>                                                
-                    </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next">
-                            <i class="uil uil-angle-right-b swiper-paper-icon"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="uil uil-angle-left-b swiper-paper-icon"></i>
-                        </div>
-                        <!-- Add Pagination -->
-                        <div class="swiper-pagination"></div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__bg">
-                <a href="#" class="footer__title">KACPER ŁUKASZEWSKI</a>
-                <p class="footer__copy">&#169;2024 Kacper Łukaszewski.</p>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
-        </footer>
-        
-        <!--### SCROLL TOP ###-->
-        <a href="" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup__icon"></i></a>
-        <!--### SWIPER JS ###-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <!--### MAIN JS ###-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <div class="nav__btns">
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle"><i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home" data-id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/kacper-lukaszewski/" target="_blank"
+                            class="home__social-icon"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://github.com/TheKacpi130" target="_blank" class="home__social-icon"><i
+                                class="uil uil-github-alt"></i></a>
+                    </div>
+                    <div class="home__img">
+                        <img src="./assets/img/home.png" alt="">
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">KACPER ŁUKASZEWSKI</h1>
+                        <h3 class="home__subtitle">Wsparcie IT</h3>
+                        <p class="home__description">Aspirujący Front-End Developer na ostatnim roku studiów. Za dnia
+                            jako wsparcie dla kilkunastu firm w Stolicy, po godzinach droniarz i początkujący twórca
+                            stron WWW</p>
+                        <a download="" href="assets/pdf/Kacper ŁukaszewskiCV-PAZ2023.pdf"
+                            class="button button--flex">Download CV<i class="uil uil-download-alt button__icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about" data-id="about">
+            <h2 class="section__title">O MNIE</h2>
+            <span class="section__subtitle">TO JA</span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="Kacper na plaży Walencja" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">Już od Technikum wiedziałem że chce zostać informatykiem z początku
+                        była to wyłącznie miłość do hardware'u lecz z czasem strasznie polubiłem pisanie stron WWW ale
+                        nie zamykając się tylko na HTML czy CSS. Każdego dnia staram uczyć się czegoś nowego i
+                        powiększać swoją wiedzę w zakresie IT i nowych technologii</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="qualification section">
+            <h2 class="section__title">DOŚWIADCZENIE</h2>
+            <span class="section__subtitle"></span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+                <div class="qualification__sections">
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION  1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <span class="qualification__degree">Technikum</span>
+                                <h3 class="qualification__tittle">Kierunek Informatyka</h3>
+                                <span class="qualification__subtitle">Zespół Szkół Zawodowychim. Marii
+                                    Skłodowskiej-Curie</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014 - 2018
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION  2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <span class="qualification__degree">Studia</span>
+                                <h3 class="qualification__tittle">Front-End Developer</h3>
+                                <span class="qualification__subtitle">Uniwersytet WSB Merito Warszawa</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020 - obecnie
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                    <div class="qualification__content" data-content id="work">
+                        <!--==================== QUALIFICATION  1 ====================-->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__tittle">Kierowca do 3,5t/ listonosz paczkowy</h3>
+                                <span class="qualification__subtitle">POCZTA POLSKA S.A.</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Wrzesień 2018 - Grudzień 2022
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION  2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__tittle">Wsparcie IT / Technik Informatyk</h3>
+                                <span class="qualification__subtitle">OPCJA.PL</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    Luty 2023 - obecnie
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="paper section" id="paper" data-id="paper">
+            <h2 class="section__title">Projekty</h2>
+            <span class="section__subtitle">Projekty którymi się zajmuje aktualnie</span>
+
+            <div class="paper__container container swiper">
+                <div class="swiper-wrapper">
+                    <!-- 1 -->
+                    <div class="paper__content grid swiper-slide">
+                        <img src="assets/img/projekt1.webp" alt="CFD code OpenFOAM mesh for pool scrubbing geometry"
+                            class="paper__img">
+
+                        <div class="paper__dat">
+                            <h3 class="paper__title">PASIEKA POD WIERZBĄ</h3>
+                            <p class="paper__description">Strona internetowa rodzinnej pasieki z miodami</p>
+                            <a href="https://www.pasiekapodwierzba.pl" target="_blank"
+                                class="button button--flex button--small paper__button">SPRAWDŹ<i
+                                    class="uil uil-arrow-right button__icon"></i></a>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="paper__content grid swiper-slide">
+                        <img src="assets/img/projekt2.png"
+                            alt="Small modular reactor containment pressure and radioactivity" class="paper__img">
+
+                        <div class="paper__dat">
+                            <h3 class="paper__title">FanatykDroniarstwa</h3>
+                            <p class="paper__description">Autorska strona wkrótce powstanie</p>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="paper__content grid swiper-slide">
+                        <img src="assets/img/projekt3.png" alt="Integral experiment test facility" class="paper__img">
+
+                        <div class="paper__dat">
+                            <h3 class="paper__title">RUDAKIWI</h3>
+                            <p class="paper__description">Projekt sklepu internetowego na potrzeby druków i nalepek
+                                przedstawiające pewną markę już wkrótce</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-paper-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-paper-icon"></i>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__bg">
+            <a href="#" class="footer__title">KACPER ŁUKASZEWSKI</a>
+            <p class="footer__copy">&#169;2024 Kacper Łukaszewski.</p>
+        </div>
+    </footer>
+
+    <!--### SCROLL TOP ###-->
+    <a href="" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup__icon"></i></a>
+    <!--### SWIPER JS ###-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--### MAIN JS ###-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

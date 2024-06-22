@@ -784,7 +784,7 @@ img {
   }
 
   .footer__copy{
-    margin-top: 4.5rem;
+    margin-top: 3rem;
   }
 }
 
@@ -832,5 +832,12 @@ img {
   .swiper .swiper-pagination-testimonial{
     bottom: 0;
   }
+}
+
+
+.clock-container {
+  color: var(--first-color);
+  text-align: center;
+  align-items: center;
 }
 
